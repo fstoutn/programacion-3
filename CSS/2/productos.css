@@ -1,0 +1,156 @@
+
+/* =====================================================
+   TRABAJO PRÁCTICO 2 - PRODUCTOS
+   ===================================================== */
+
+
+/* =====================================================
+   VARIABLES CSS
+   ===================================================== */
+
+:root {
+    --color-fondo: #f2f2f2;
+    --color-texto: #222222;
+    --color-acento: #3498db;
+    --color-acento-hover: #217dbb;
+}
+
+
+/* =====================================================
+   ESTILOS GENERALES
+   ===================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--color-acento);
+    color: white;
+}
+
+
+/* =====================================================
+   CONTENEDOR DE PRODUCTOS
+   ===================================================== */
+
+.productos {
+    text-align: center;
+    margin: 40px auto;
+}
+
+
+/* =====================================================
+   TARJETAS DE PRODUCTO
+   ===================================================== */
+
+.tarjeta-producto {
+    display: inline-block;
+
+    width: 300px;
+
+    background-color: white;
+    color: var(--color-texto);
+
+    border: 2px solid var(--color-acento);
+    border-radius: 12px;
+
+    padding: 20px;
+    margin: 15px;
+
+    box-shadow: 5px 5px 10px #aaaaaa;
+
+    vertical-align: top;
+}
+
+
+/* =====================================================
+   IMAGEN SIMULADA
+   ===================================================== */
+
+.imagen-producto {
+    width: 100%;
+    height: 180px;
+
+    background-color: var(--color-acento);
+
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   TÍTULO DEL PRODUCTO
+   ===================================================== */
+
+.tarjeta-producto h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+   ===================================================== */
+
+.tarjeta-producto p {
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   BOTÓN DE COMPRA
+   ===================================================== */
+
+.boton-compra {
+    background-color: var(--color-acento);
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 25px;
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HOVER
+   ===================================================== */
+
+/*
+   Al pasar el mouse sobre el botón,
+   cambia su color de fondo.
+*/
+
+.boton-compra:hover {
+    background-color: var(--color-acento-hover);
+}
+
+
+/* =====================================================
+   PIE DE PÁGINA
+   ===================================================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+
+    background-color: var(--color-acento);
+    color: white;
+
+    margin-top: 40px;
+}
