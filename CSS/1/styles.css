@@ -1,0 +1,209 @@
+
+:root {
+    --color-fondo: #f2f2f2;
+    --color-texto: #222222;
+    --color-acento: #3498db;
+}
+
+
+/* =====================================================
+   ESTILOS GENERALES
+   ===================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--color-acento);
+    color: white;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-acento);
+    color: white;
+}
+
+
+/* =====================================================
+   2. SELECTORES EN CSS
+   ===================================================== */
+
+/* Selector por ID */
+#parrafo-id {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Selector por clase */
+.parrafo-clase {
+    color: #2980b9;
+    font-style: italic;
+}
+
+/* Selector por etiqueta */
+section p {
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   3. MODIFICACIÓN DE TEXTO
+   ===================================================== */
+
+/* Título con sombra y mayúsculas */
+.titulo-sombra {
+    text-transform: uppercase;
+    text-shadow: 3px 3px 4px #999999;
+}
+
+/* Párrafo con interlineado y espacio entre letras */
+.texto-espaciado {
+    line-height: 2;
+    letter-spacing: 3px;
+}
+
+/* Cita en cursiva y con otra fuente */
+.cita {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   4. MODELO DE CAJA
+   ===================================================== */
+
+.tarjeta-caja {
+    background-color: #eeeeee;
+    border: 3px solid var(--color-acento);
+    padding: 25px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #aaaaaa;
+
+    /*
+        box-sizing: content-box:
+        El ancho y alto establecidos corresponden solamente
+        al contenido. El padding y el border se agregan
+        al tamaño final del elemento.
+
+        box-sizing: border-box:
+        El ancho y alto establecidos incluyen el contenido,
+        el padding y el border dentro de esas dimensiones.
+    */
+
+    box-sizing: border-box;
+}
+
+/* Cuadrado de color dentro de la tarjeta */
+.cuadrado-color {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-acento);
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   5. DISPLAY Y VISIBILITY
+   ===================================================== */
+
+/* ---------- Display: block ---------- */
+
+.galeria-block .tarjeta-display {
+    display: block;
+    background-color: #d6eaf8;
+    border: 2px solid var(--color-acento);
+    padding: 15px;
+    margin: 10px 0;
+}
+
+
+/* ---------- Display: inline ---------- */
+
+.galeria-inline .tarjeta-display {
+    display: inline;
+
+    background-color: #d5f5e3;
+    border: 2px solid #27ae60;
+    padding: 15px;
+    margin: 10px;
+
+    /*
+        Al utilizar display: inline, algunas propiedades
+        del modelo de caja, como width y height, no se
+        comportan de la misma manera que en un elemento block.
+    */
+}
+
+
+/* ---------- Display: inline-block ---------- */
+
+.galeria-inline-block .tarjeta-display {
+    display: inline-block;
+    width: 150px;
+
+    background-color: #f9e79f;
+    border: 2px solid #f39c12;
+    padding: 20px;
+    margin: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* ---------- Visibility ---------- */
+
+/* Este botón desaparece completamente y no ocupa espacio */
+.boton-none {
+    display: none;
+}
+
+/* Este botón es invisible pero conserva su espacio */
+.boton-hidden {
+    visibility: hidden;
+}
+
+
+/* =====================================================
+   6. VARIABLES CSS - TARJETA DE PERFIL
+   ===================================================== */
+
+.tarjeta-perfil {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 3px solid var(--color-acento);
+
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
