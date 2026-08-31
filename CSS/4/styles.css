@@ -11,6 +11,16 @@ body {
 
 /* Barra de navegación */
 
+/* Botón del menú hamburguesa */
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 .navbar {
     background-color: #333;
     color: white;
@@ -142,6 +152,40 @@ footer {
         gap: 15px;
     }
 
+    @media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    /* Ocultar menú */
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Mostrar menú hamburguesa */
+
+    .menu-button {
+        display: block;
+    }
+
+    .hero-container {
+        margin: 25px auto;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .caracteristicas {
+        padding: 30px 20px 40px;
+    }
+}
     .hero-container {
         margin: 25px auto;
     }
