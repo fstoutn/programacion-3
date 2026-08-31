@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiTienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__container container">
+
+            <a href="#top" class="site-header__brand">
+                <span class="site-header__mark">M</span>
+                <span class="site-header__name">MiTienda</span>
+            </a>
+
+            <nav class="site-header__nav">
+                <a href="#novedades">Novedades</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="site-header__menu" type="button" aria-label="Abrir menú">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Zona principal -->
+        <section class="hero container">
+
+            <!-- Primer div: ocupa las primeras 3 columnas de la fila 1 -->
+<div class="hero__content panel">
+
+    <h1 class="hero__title">
+        Sistema de Botones
+    </h1>
+
+    <p class="hero__text">
+        Ejemplos de botones con diferentes estilos y estados.
+    </p>
+
+    <div class="btn-group">
+
+        <button class="btn btn--primary" type="button">
+            Primario
+        </button>
+
+        <button class="btn btn--secondary" type="button">
+            Secundario
+        </button>
+
+        <button class="btn btn--outline" type="button">
+            Outline
+        </button>
+
+        <button class="btn btn--danger" type="button">
+            Peligro
+        </button>
+
+        <button class="btn btn--icon" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+            Buscar
+        </button>
+
+    </div>
+
+</div>
+
+
+            
+
+
+            <!-- Segundo div: ocupa columnas 4 y 5 y filas 1 a 4 -->
+            <article class="product-card">
+
+                <div class="product-card__media">
+
+                    <img
+                        src="zapatilla.jpg"
+                        alt="Zapatillas alternativas"
+                    >
+
+                    <span class="product-card__badge">
+                        NUEVO
+                    </span>
+
+                </div>
+
+                <div class="product-card__info">
+
+                    <h2 class="product-card__title">
+                        ZAPATILLAS ALTERNATIVAS
+                    </h2>
+
+                    <p class="product-card__description">
+                        Zapatillas cómodas y modernas, ideales para
+                        acompañarte en tus actividades diarias.
+                    </p>
+
+                    <div class="product-card__price">
+                        <span class="product-card__old-price">
+                            $85.000
+                        </span>
+
+                        <span>
+                            $69.999
+                        </span>
+                    </div>
+
+                    <div class="btn-group">
+
+                        <button class="btn btn--primary" type="button">
+                            Comprar Ahora
+                        </button>
+
+                        <button class="btn btn--icon btn--secondary" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" /><path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" /><path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" /><path d="M8.56 20.31a9 9 0 0 0 3.44 .69" /><path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" /><path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" /><path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" /><path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" /><path d="M9 12h6" /><path d="M12 9v6" /></svg>
+
+                            Añadir
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Secciones de relleno -->
+
+        <section id="novedades" class="content-section container">
+
+            <div class="panel content-section__panel">
+
+                <h2 class="content-section__title">
+                    Novedades
+                </h2>
+
+                <p class="content-section__note">
+                    En esta sección encontrarás las últimas novedades
+                    disponibles en nuestra tienda.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="ofertas" class="content-section container">
+
+            <div class="panel content-section__panel">
+
+                <h2 class="content-section__title">
+                    Ofertas
+                </h2>
+
+                <p class="content-section__note">
+                    Aprovechá nuestras ofertas y encontrá productos
+                    seleccionados a precios especiales.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="contacto" class="content-section container">
+
+            <div class="panel content-section__panel">
+
+                <h2 class="content-section__title">
+                    Contacto
+                </h2>
+
+                <p class="content-section__note">
+                    Para realizar consultas o recibir más información,
+                    podés comunicarte con nosotros.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
